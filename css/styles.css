@@ -1,5 +1,5 @@
 body {
-    background: #202225;
+    background: #fff;
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
@@ -15,17 +15,14 @@ a {
 }
 
 /*Navbar*/
-header {
-    height: 100vh;
-}
-
 .nav-main {
     width: 100%;
     height: 50px;
-    background: #363A3E;
+    background: #212529;
     display: flex;
     padding: 10px 0px;
     justify-content: space-between;
+    position: fixed;
 }
 
 .nav-main img {
@@ -52,13 +49,12 @@ header {
 
 /* Header carousel */
 .carousel{
-    position: relative;
     width: 100%;
-    height: calc(100vh - 50px);
+    height: calc(100vh + 80px);
     background-size: cover;
     background-position: center;
     transition: all .1s ease-in-out;
-    animation: carousel 25s infinite linear;
+    animation: carousel 36s infinite linear;
 } 
 
 .carousel-content {
@@ -66,7 +62,7 @@ header {
     padding: 0px;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(189,187,190, .1), rgba(121,123,133, .1));
+    background: linear-gradient(rgba(189,187,190, .08), rgba(121,123,133, .05));
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -112,3 +108,57 @@ header {
         background-image: url(../img/carousel/banner-5.jpg);
     }
 }
+
+/* Products */
+
+.products-cards {
+    border: 1px solid red;
+    display: flex; 
+    flex-direction: column;
+    margin-bottom: 50px;
+
+}
+.products-cards p{
+    align-self: center;
+    margin-top: 50px;
+}
+
+.products-cards .container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-self: center;
+    gap: 25px;
+    padding: 50px 50px 0px 50px;
+}
+
+.products-cards .item{
+    border: 1px solid red;
+    border-radius: 4px;
+    width: 385px;
+    height: 300px;
+}
+
+.products-cards .container .item{
+
+}
+
+.products-cards .container .item a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.products-cards .container .item img{
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+}
+
+.products-cards .container .item h3{
+    text-align: center;
+    border: 1px solid red;
+}
+
+
+
+
