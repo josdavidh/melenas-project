@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -7,9 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Melenas</title>
 
+    <!-- preconect Snipcart -->
+    <link rel="preconnect" href="https://app.snipcart.com">
+    <link rel="preconnect" href="https://cdn.snipcart.com">
+
+    <!-- Custom CSS Snipcart -->
+    <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.2.0/default/snipcart.css" />
+
     <!-- Google fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300;1,600&family=Roboto+Condensed:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
-        
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300;1,600&family=Roboto+Condensed:ital,wght@0,300;1,300&display=swap"
+        rel="stylesheet">
+
     <!-- Core theme CSS-->
     <link href="css/styles.css" rel="stylesheet" />
 </head>
@@ -87,7 +96,18 @@
                     <form action="" class="modal-form">
                         <span class="product-description">Lorem</span>
                         <h2>$30.000</h2>
-                        <button>Hazme un pedido</button>
+                        <button class="snipcart-add-item"
+                        data-item-id="starry-night"
+                        data-item-price="79.99"
+                        data-item-url="/paintings/starry-night"
+                        data-item-description="High-quality replica of The Starry Night by the Dutch post-impressionist painter Vincent van Gogh."
+                        data-item-image="/assets/images/starry-night.jpg"
+                        data-item-name="The Starry Night"
+                        data-item-custom1-name="Gift note">
+                        Add to cart
+                      </button>
+                        Add to cart
+                      </button>
                     </form>
                 </div>
             </div>
@@ -95,8 +115,12 @@
     </main>
 
     <!--Products Scripts-->
-
     <script src="./js/products.js"></script>
+
+    <!-- incorporate Snipcart  -->
+    <script async src="https://cdn.snipcart.com/themes/v3.2.0/default/snipcart.js"></script>
+    <div hidden id="snipcart" data-api-key="YjE2Y2RlYzAtYjI2Yy00ODliLTkxMjUtYTY3ZTBhMzhiNTViNjM3NjE4NjU3ODQ2MTE2Mzg4">
+    </div>
 </body>
 
 </html>
