@@ -18,16 +18,21 @@
 
     <!-- Core theme CSS-->
     <link href="css/styles.css" rel="stylesheet" />
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <header>
         <nav class="nav-main">
-            <img src="./img/navbar-logo.svg" alt="logo">
+            <img src="./img/logo-white.svg" alt="logo">
             <ul class="nav-items">
-                <li><a href="#">ACERCA DE</a></li>
+                <li><a href="#">NOSOTROS</a></li>
                 <li><a href="#">PRODUCTOS</a></li>
-                <li><a href="#">SOCIAL</a></li>
+                <li><a href="#">PROMOS</a></li>
                 <li><a href="#">CONTACTO</a></li>
             </ul>
         </nav>
@@ -37,34 +42,39 @@
                 <a href="">Lorem, ipsum.</a> -->
             </div>
         </section>
+        <!-- WhapsApp Button -->
+        <a href="https://api.whatsapp.com/message/3MYRFXISCH45B1" target="_blank" rel="noopener noreferrer"
+            class="btn-wsp"><i class="fab fa-whatsapp"></i></a>
     </header>
     <main>
         <!--About section-->
-        <div class="about-container">
-            <section class="about-section">
-                <img src="./img/logo-negro.jpg" alt="logo">
-            </section>
-            <!-- Shape Divider App -->
-            <div class="custom-shape-divider-bottom-1628094144">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                    <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
-                    <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
-                    <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
-                </svg>
+        <section class="about-container">
+            <img src="./img/logo-negro.jpg" alt="logo">
+            <div class="about-section">
+                <h1>Quienes somos</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium excepturi, accusantium
+                    voluptatem, velit modi nulla labore impedit iusto laudantium itaque voluptatum et mollitia ratione
+                    non harum natus quos optio.</p>
+                <a href="https://www.instagram.com/melenasaccesorios/" class="btn" target="_blank"
+                    rel="noopener noreferrer">Siguenos en Instagram<i class="fab fa-instagram fa-2x"></i></a>
             </div>
-        </div>
+        </section>
+
         <!-- Products section -->
         <section class="products-cards">
+            <h1 id="products">Productos</h1>
             <div class="container">
                 <div class="item">
                     <a href="#" class="product-link">
                         <img src="./img/products/gorros1.JPG" alt="">
                         <section class="item-header">
-                            <h2>Gorro de Saten</h2>
-                            <p>$15.000cop</p>
+                            <h3>3 Und Disponibles <i class="fas fa-shopping-cart"></i></h3>
                         </section>
                         <section class="item-description">
-                            <h3>gorro impermeable</h3>
+                            <h2>Lorem ipsum dolor</h2>
+                        </section>
+                        <section class="item-footer">
+                            <h4>$15.300 Cop</h4>
                         </section>
                     </a>
                 </div>
@@ -72,11 +82,13 @@
                     <a href="">
                         <img src="./img/products/gorros-blancos.jpg" alt="">
                         <section class="item-header">
-                            <h2>Gorro de Saten</h2>
-                            <p>$15.000cop</p>
+                            <h3>3 Und Disponibles <i class="fas fa-shopping-cart"></i></h3>
                         </section>
                         <section class="item-description">
-                            <h3>gorro impermeable</h3>
+                            <h2>Lorem ipsum dolor</h2>
+                        </section>
+                        <section class="item-footer">
+                            <h4>$15.300 Cop</h4>
                         </section>
                     </a>
                 </div>
@@ -84,11 +96,13 @@
                     <a href="">
                         <img src="./img/products/gorros3.JPG" alt="">
                         <section class="item-header">
-                            <h2>Gorro de Saten</h2>
-                            <p>$15.000cop</p>
+                            <h3>3 Und Disponibles <i class="fas fa-shopping-cart"></i></h3>
                         </section>
                         <section class="item-description">
-                            <h3>gorro impermeable</h3>
+                            <h2>Lorem ipsum dolor</h2>
+                        </section>
+                        <section class="item-footer">
+                            <h4>$15.300 Cop</h4>
                         </section>
                     </a>
                 </div>
@@ -98,11 +112,27 @@
                     <a href="">
                         <img src="./img/products/gorros-azules.jpg" alt="">
                         <section class="item-header">
-                            <h2>Gorro de Saten</h2>
-                            <p>$15.000cop</p>
+                            <h3>3 Und Disponibles <i class="fas fa-shopping-cart"></i></h3>
                         </section>
                         <section class="item-description">
-                            <h3>gorro impermeable</h3>
+                            <h2>Lorem ipsum dolor</h2>
+                        </section>
+                        <section class="item-footer">
+                            <h4>$15.300 Cop</h4>
+                        </section>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="">
+                        <img src="./img/products/gorros-azules.jpg" alt="">
+                        <section class="item-header">
+                            <h3>3 Und Disponibles <i class="fas fa-shopping-cart"></i></h3>
+                        </section>
+                        <section class="item-description">
+                            <h2>Lorem ipsum dolor</h2>
+                        </section>
+                        <section class="item-footer">
+                            <h4>$15.300 Cop</h4>
                         </section>
                     </a>
                 </div>
@@ -110,23 +140,13 @@
                     <a href="">
                         <img src="./img/products/tohallas.JPG" alt="">
                         <section class="item-header">
-                            <h2>Gorro de Saten</h2>
-                            <p>$15.000cop</p>
+                            <h3>3 Und Disponibles <i class="fas fa-shopping-cart"></i></h3>
                         </section>
                         <section class="item-description">
-                            <h3>gorro impermeable</h3>
+                            <h2>Lorem ipsum dolor</h2>
                         </section>
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="">
-                        <img src="./img/products/gorros-rojos.jpg" alt="">
-                        <section class="item-header">
-                            <h2>Gorro de Saten</h2>
-                            <p>$15.000cop</p>
-                        </section>
-                        <section class="item-description">
-                            <h3>gorro impermeable</h3>
+                        <section class="item-footer">
+                            <h4>$15.300 Cop</h4>
                         </section>
                     </a>
                 </div>
@@ -135,20 +155,43 @@
             <!-- Modals -->
             <div class="modal-container">
                 <div class="modal-products modal-show-hiden">
-                    <p class="close-modal">X</p>
-                    <div class="modal-img">
-                        <img src="" alt="">
-                    </div>
-                    <form action="" class="modal-form">
-                        <span class="product-description">Lorem</span>
-                        <h2>$30.000</h2>
-                        <button>Comprar</button>
-                        </button>
-                        </button>
-                    </form>
+                    <div class="top-modal-products"></p><i class="fas fa-times fa-2x close-modal" ></i></div>
+                    <section>
+                        <div class="modal-left">
+                            <div class="top-modal-left">
+                                <img src="./img/products/gorros1.JPG" alt="">
+                            </div>
+                            <div class="bottom-modal-left">
+
+                            </div>
+                        </div>
+                        <div class="modal-right">
+                            <section class="modal-title">  
+                                <h1>Titulo</h1>
+                                <h2>$15,000</h2>
+                            </section>
+                            <section class="modal-description">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab minima eius nemo voluptatibus rerum neque.</p>
+                            </section>
+                            <section class="modal-properties">
+                                <h3>Materiales</h3>
+                                <p>Satén - microfibra - Bambú</p>
+                                <h4>Categoria</h4>
+                                <p>Gorros</p>
+                            </section>
+                            <section class="modal-btn">
+
+                            </section>
+                        </div>
+                    </section>
                 </div>
             </div>
         </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+
+        </footer>
     </main>
 
     <!--Products Scripts-->

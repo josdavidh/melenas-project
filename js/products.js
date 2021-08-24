@@ -24,5 +24,6 @@ closeModal.addEventListener("click", function(e){
 window.addEventListener("click", function (e){ //function to close modal in case clik on "modal-container"
     if (e.target == modalContainer) { //case clik on "modal-container"
         hiddenModal();
+        console.log("necesito que te cierres");
     }
 });
