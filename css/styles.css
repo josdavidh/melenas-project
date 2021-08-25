@@ -1,10 +1,11 @@
 *{
 
-    /* box-sizing: border-box; */
-}
-body {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+body {
     background: #FFF;
     font-family: 'Montserrat', sans-serif;
 }
@@ -24,7 +25,8 @@ body {
 }
 
 .btn-wsp:hover {
-    background-color: #05da6f;
+    background-color: #05ce69;
+    transition: .4s ease-in-out;
 }
 
 ul {
@@ -36,19 +38,15 @@ a {
     color: antiquewhite;
 }
 
-h2, h3, h4, p {
-    color: black;
-    margin: 0px;
-    padding: 0px;
-}
 /*Navbar*/
 .nav-main {
     width: 100%;
-    height: 50px;
+    height: 70px;
     background: #211f20;
     display: flex;
     padding: 10px 0px;
     justify-content: center;
+    align-items: center;
     position: fixed;
     box-shadow: 0 1px 5px 0 #212529;
 }
@@ -59,6 +57,7 @@ h2, h3, h4, p {
 
 .nav-items {
     display: flex;
+    margin-left: 50px;
 }
 
 .nav-items li {
@@ -151,8 +150,8 @@ h2, h3, h4, p {
     background-color: #211f20;
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 520px;
-    padding:0;
 
 }
 
@@ -161,8 +160,6 @@ h2, h3, h4, p {
 }
 
 .about-section {
-    height: 100%;
-    padding-top: 15em;
 }
 
 .about-section h1 {
@@ -178,7 +175,7 @@ h2, h3, h4, p {
 }
 
 .about-section a {
-    margin: 4em 0 0 15em;
+    margin: 50px 0 0 350px;
 }
 
 .about-section a:hover {
@@ -207,6 +204,7 @@ h2, h3, h4, p {
     font-size: 50px;
     width: 100%;;
     text-align: center;
+    margin-top: 25px;
 }
 
 .products-cards {
@@ -298,13 +296,13 @@ h2, h3, h4, p {
 }
 
 .modal-products{
-    width: 1000px;
-    height: 540px;
+    width: 1120px;
+    height: 600px;
     background: #FFF;
     position: relative;
     transition: transform .8s ease-in-out;
     transform: translateY(0%);
-    border-radius: 2px;    
+    border-radius: 5px;    
 }
 
 .modal-show-hiden{
@@ -313,9 +311,11 @@ h2, h3, h4, p {
 
 .modal-products .top-modal-products {
     width: 100%;
+    height: 30px;
     display: flex;
     justify-content: flex-end;
 }
+
 
 .close-modal{
     margin: 7px 11px 0 0;
@@ -327,25 +327,24 @@ h2, h3, h4, p {
     color: #4b4e52;
 }
 
-.modal-products section{
+.modal-products > section{
     display: flex;
+    margin-top: 20px;
+
+
 }
 
 .modal-left {
-    height: 500px;
-    /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
-    
-
+    align-items: center;
 }
 
 .modal-left .top-modal-left {
-    width: 520px;
-    height: 350px;
-    margin: 0 20px 20px 20px;
-    box-shadow: 0 2px 5px 0 #1e202252;;
-    
+    width: 570px;
+    height: 330px;
+    margin: 0 0 20px 0px;
+    box-shadow: 0 2px 5px 0 #1e202252;
 }
 
 .modal-left .top-modal-left img {
@@ -354,20 +353,83 @@ h2, h3, h4, p {
 }
 
 .modal-left .bottom-modal-left {
-    border: 1px solid green;
-    height: 150px;
-    width: 520px;
-    margin: 0 20px 5px 20px;
+    height: 130px;
+    width: 640px;
+    margin: 0 20px 0 30px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+
 }
 
+.bottom-modal-left > figure {
+    height: inherit;
+    width: 180px;
+    box-shadow: 0 2px 5px 0 #1e202252;
+}
+.bottom-modal-left > figure > img {
+    width: inherit;
+    height: 100%;
+    border-radius: 2px;
+}
+
+.bottom-modal-left > a {
+    color: #8b847756;
+    align-self: center;
+    justify-self: center;
+}
+
+
 .modal-right {
-    height: 500px;
+    height: fit-content;
     display: flex;
     flex-direction: column;
-    border: 1px solid blue;
+    border-radius: 1px;
+    box-shadow: 0 2px 5px 0 #1e202252;
+    margin: 0 25px 5px 0;
+    padding: 10px;
 }
 
 .modal-right .modal-title {
-    display: block;
 }
+
+.modal-right .modal-title h1 {
+    font-size: 50px;
+}
+
+.modal-right .modal-title h2 {
+    font-weight: 450;
+    margin-left: 5px;
+}
+
+.modal-right .modal-description {
+    margin-top: 20px;
+}
+
+
+.modal-right .modal-properties {
+    margin-top: 20px;
+}
+
+.modal-right .modal-properties h3,h4 {
+    color: #211f20;
+    margin-top: 5px;
+}
+
+.modal-right .modal-properties p{
+    color: #8b8477;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.modal-right .modal-btn {
+    margin-top: 20px;
+    align-self: center;
+}
+
+.modal-right .modal-btn > a:hover {
+    background-color: #01e675;
+    transition: .4s ease-in-out;
+}
+
 
