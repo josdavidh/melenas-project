@@ -1,13 +1,34 @@
 let closeModal = document.querySelectorAll(".close-modal")[0];
-let productLink = document.querySelectorAll(".product-link")[0];
+let productLinks = document.querySelectorAll(".product-link");
 let modal = document.querySelectorAll(".modal-products")[0];
 let modalContainer = document.querySelectorAll(".modal-container")[0];
 
-productLink.addEventListener("click", function(e){
-    // e.preventDefault();
-    openModal();
-   
+let container = document.querySelector(".products-container");
+
+
+let bandera = [];
+
+productLinks.forEach(element => {
+    bandera.push(element);
+    
 });
+
+container.addEventListener('click', function(e){
+    findProduct(bandera,e.target)
+})
+
+function findProduct (bandera,target) {
+
+
+    for (let i = 0; i < bandera.length; i++) {
+        
+        if (target === bandera[i]) {
+            openModal()
+        }
+        
+    }
+}
+
 closeModal.addEventListener("click", function(e){
     hiddenModal();
 });
@@ -27,7 +48,6 @@ function openModal () {
 
 
 window.addEventListener("click", function (e){ //function to close modal in case clik on "modal-container"
-    
     if (e.target == modalContainer) { //case clik on "modal-container"
         hiddenModal();
     }

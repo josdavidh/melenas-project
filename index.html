@@ -82,7 +82,7 @@
             <div id="main-container" class="main-products-container">
                 <div class="products-container">
                     <div class="item">
-                        <a href="#" class="product-link">
+                        <div class="product-link" id="item-1">
                             <img src="./img/products/gorros1.JPG" alt="">
                             <section class="item-header">
                                 <h2>Chulo tipo pañoleta</h2>
@@ -91,11 +91,11 @@
                             <section class="item-footer">
                                 <h3>3 Und Disponibles <i class="fas fa-shopping-cart"></i></h3>
                             </section>
-                        </a>
+                        </div>
                     </div>
                     <div class="item">
-                        <a href="#" class="product-link">
-                            <img src="./img/products/gorros-azules.jpg" alt="">
+                        <div class="product-link">
+                            <img src="./img/products/gorros1.JPG" alt="">
                             <section class="item-header">
                                 <h2>Chulo tipo pañoleta</h2>
                                 <h4>$15.300 Cop</h4>
@@ -103,11 +103,11 @@
                             <section class="item-footer">
                                 <h3>3 Und Disponibles <i class="fas fa-shopping-cart"></i></h3>
                             </section>
-                        </a>
+                        </div>
                     </div>
                     <div class="item">
-                        <a href="#" class="product-link">
-                            <img src="./img/products/gorros-rojos.jpg" alt="">
+                        <div class="product-link">
+                            <img src="./img/products/gorros1.JPG" alt="">
                             <section class="item-header">
                                 <h2>Chulo tipo pañoleta</h2>
                                 <h4>$15.300 Cop</h4>
@@ -115,11 +115,11 @@
                             <section class="item-footer">
                                 <h3>3 Und Disponibles <i class="fas fa-shopping-cart"></i></h3>
                             </section>
-                        </a>
+                        </div>
                     </div>
                     <div class="item">
-                        <a href="#" class="product-link">
-                            <img src="./img/products/gorros3.JPG" alt="">
+                        <div class="product-link">
+                            <img src="./img/products/gorros1.JPG" alt="">
                             <section class="item-header">
                                 <h2>Chulo tipo pañoleta</h2>
                                 <h4>$15.300 Cop</h4>
@@ -127,11 +127,11 @@
                             <section class="item-footer">
                                 <h3>3 Und Disponibles <i class="fas fa-shopping-cart"></i></h3>
                             </section>
-                        </a>
+                        </div>
                     </div>
                     <div class="item">
-                        <a href="#" class="product-link">
-                            <img src="./img/products/tohallas.JPG" alt="">
+                        <div class="product-link">
+                            <img src="./img/products/gorros1.JPG" alt="">
                             <section class="item-header">
                                 <h2>Chulo tipo pañoleta</h2>
                                 <h4>$15.300 Cop</h4>
@@ -139,11 +139,11 @@
                             <section class="item-footer">
                                 <h3>3 Und Disponibles <i class="fas fa-shopping-cart"></i></h3>
                             </section>
-                        </a>
+                        </div>
                     </div>
                     <div class="item">
-                        <a href="#" class="product-link">
-                            <img src="./img/products/gorros-rojos.jpg" alt="">
+                        <div class="product-link">
+                            <img src="./img/products/gorros1.JPG" alt="">
                             <section class="item-header">
                                 <h2>Chulo tipo pañoleta</h2>
                                 <h4>$15.300 Cop</h4>
@@ -151,7 +151,7 @@
                             <section class="item-footer">
                                 <h3>3 Und Disponibles <i class="fas fa-shopping-cart"></i></h3>
                             </section>
-                        </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -163,17 +163,20 @@
                     <section>
                         <div class="modal-left">
                             <div class="top-modal-left">
-                                <img src="./img/products/gorros1.JPG" alt="">
+                                <figure class="modal-main-image">
+                                    <img src="./img/products/gorros1.JPG" alt="">
+                                </figure>
+                                
                             </div>
                             <div class="bottom-modal-left">
                                 <a href=""><i class="fas fa-chevron-left fa-2x"></i></a>
-                                <figure>
+                                <figure class="modal-image1">
                                     <img src="./img/products/tohallas.JPG" alt="">
                                 </figure>
-                                <figure>
+                                <figure class="modal-image2">
                                     <img src="./img/products/gorros3.JPG" alt="">
                                 </figure>
-                                <figure>
+                                <figure class="modal-image3">
                                     <img src="./img/products/gorros-azules.jpg" alt="">
                                 </figure>
                                 <a href=""><i class="fas fa-chevron-right fa-2x"></i></a>
@@ -191,9 +194,9 @@
                             </section>
                             <section class="modal-properties">
                                 <h3>Materiales</h3>
-                                <p>Satén - microfibra - Bambú</p>
+                                <p class="modal-materials">Satén - microfibra - Bambú</p>
                                 <h4>Categoria</h4>
-                                <p>Gorros</p>
+                                <p class="modal-category">Gorros</p>
                             </section>
                             <section class="modal-btn">
                                 <a href="" class="btn">Haz tu pedido <i class="fab fa-whatsapp fa-2x"></i></a>
@@ -271,7 +274,7 @@
     </main>
 
     <!--Products Scripts-->
-    <script src="./js/modal-products.js"></script>
+    <!-- <script src="./js/modal-products.js"></script> -->
     <script src="./js/products.js"></script>
 
     <!-- Smoth scrolling -->
