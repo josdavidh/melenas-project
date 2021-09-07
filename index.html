@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>melenasaccesorios</title>
+    <link rel="shortcut icon" href="./img/logo-negro.jpg">
 
 
 
@@ -19,15 +20,21 @@
     <!-- Core theme CSS-->
     <link href="css/styles.css" rel="stylesheet" />
 
+    <!-- Responsive Css -->
+    <link rel="stylesheet" href="./css/responsive.css">
+
     <!-- Font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body>
+<body class="body">
     <header>
         <!-- Navegation -->
+        <div class="menu-btn">
+            <i class="fas fa-bars fa-2x"></i>
+        </div>
         <nav class="nav-main">
             <a href=""><img class="nav-logo" src="./img/logo-white.svg" alt="logo"></a>
             <ul class="nav-items">
@@ -35,6 +42,12 @@
                 <li><a href="#products-1">PRODUCTOS</a></li>
                 <li><a href="#promos">PROMOS</a></li>
                 <li><a href="#footer">CONTACTO</a></li>
+            </ul>
+            <ul class="nav-items-responsive">
+                <li><a  id="nosotros" href="#about">NOSOTROS</a></li>
+                <li><a  id="productos" href="#products-1">PRODUCTOS</a></li>
+                <li><a  id="promo"href="#promos">PROMOS</a></li>
+                <li><a  id="contacto"href="#footer">CONTACTO</a></li>
             </ul>
         </nav>
         <section class="carousel">
@@ -68,7 +81,8 @@
         <section id="products-1" class="products-cards">
             <div class="products-info">
                 <h1 id="products">Productos</h1>
-                <a> <i class="fas fa-store fa-3x"></i>Ver todos los productos</a>
+                <a id="all-products"><i id="fa-store-responsive" class="fas fa-store fa-2x"></i> <i id="fa-store"
+                        class="fas fa-store fa-3x"></i>Ver todos los productos</a>
             </div>
 
             <div class="category">
@@ -82,7 +96,7 @@
             <div id="main-container" class="main-products-container">
                 <div class="products-container">
                     <div class="item">
-                        <div class="product-link" id="item-1">
+                        <div class="product-link">
                             <img src="./img/products/gorros1.JPG" alt="">
                             <section class="item-header">
                                 <h2>Chulo tipo pañoleta</h2>
@@ -94,6 +108,30 @@
                         </div>
                     </div>
                     <div class="item">
+                        <div class="product-link">
+                            <img src="./img/products/gorros3.JPG" alt="">
+                            <section class="item-header">
+                                <h2>Chulo tipo pañoleta</h2>
+                                <h4>$15.300 Cop</h4>
+                            </section>
+                            <section class="item-footer">
+                                <h3>3 Und Disponibles <i class="fas fa-shopping-cart"></i></h3>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="product-link">
+                            <img src="./img/products/tohallas.JPG" alt="">
+                            <section class="item-header">
+                                <h2>Chulo tipo pañoleta</h2>
+                                <h4>$15.300 Cop</h4>
+                            </section>
+                            <section class="item-footer">
+                                <h3>3 Und Disponibles <i class="fas fa-shopping-cart"></i></h3>
+                            </section>
+                        </div>
+                    </div>
+                    <!-- <div class="item">
                         <div class="product-link">
                             <img src="./img/products/gorros1.JPG" alt="">
                             <section class="item-header">
@@ -128,31 +166,7 @@
                                 <h3>3 Und Disponibles <i class="fas fa-shopping-cart"></i></h3>
                             </section>
                         </div>
-                    </div>
-                    <div class="item">
-                        <div class="product-link">
-                            <img src="./img/products/gorros1.JPG" alt="">
-                            <section class="item-header">
-                                <h2>Chulo tipo pañoleta</h2>
-                                <h4>$15.300 Cop</h4>
-                            </section>
-                            <section class="item-footer">
-                                <h3>3 Und Disponibles <i class="fas fa-shopping-cart"></i></h3>
-                            </section>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="product-link">
-                            <img src="./img/products/gorros1.JPG" alt="">
-                            <section class="item-header">
-                                <h2>Chulo tipo pañoleta</h2>
-                                <h4>$15.300 Cop</h4>
-                            </section>
-                            <section class="item-footer">
-                                <h3>3 Und Disponibles <i class="fas fa-shopping-cart"></i></h3>
-                            </section>
-                        </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
 
@@ -166,10 +180,10 @@
                                 <figure class="modal-main-image">
                                     <img src="./img/products/gorros1.JPG" alt="">
                                 </figure>
-                                
+
                             </div>
                             <div class="bottom-modal-left">
-                                <a href=""><i class="fas fa-chevron-left fa-2x"></i></a>
+                                <!-- <a href=""><i class="fas fa-chevron-left fa-2x"></i></a> -->
                                 <figure class="modal-image1">
                                     <img src="./img/products/tohallas.JPG" alt="">
                                 </figure>
@@ -179,7 +193,8 @@
                                 <figure class="modal-image3">
                                     <img src="./img/products/gorros-azules.jpg" alt="">
                                 </figure>
-                                <a href=""><i class="fas fa-chevron-right fa-2x"></i></a>
+
+                                <!-- <a href=""><i class="fas fa-chevron-right fa-2x"></i></a> -->
                             </div>
                         </div>
                         <div class="modal-right">
@@ -199,7 +214,7 @@
                                 <p class="modal-category">Gorros</p>
                             </section>
                             <section class="modal-btn">
-                                <a href="" class="btn">Haz tu pedido <i class="fab fa-whatsapp fa-2x"></i></a>
+                                <a href= "https://api.whatsapp.com/message/3MYRFXISCH45B1" target="_blank" class="btn">Haz tu pedido <i class="fab fa-whatsapp fa-2x"></i></a>
                             </section>
                         </div>
                     </section>
@@ -216,15 +231,19 @@
                         nuestros productos con el 20% de descuento</p>
                 </div>
                 <div class="section-promo1-right">
-                    <iframe width="400px" height="450px" src="https://www.instagram.com/p/CSFtdYDLs0L/embed"
-                        frameborder="0"></iframe>
+                    <div class="section-iframe"> <iframe src="https://www.instagram.com/p/CSFtdYDLs0L/embed"
+                            frameborder="0"></iframe>
+                    </div>
+
                 </div>
             </section>
 
             <section class="section-promo2">
                 <div class="section-promo2-left">
-                    <iframe width="400px" height="450px" src="https://www.instagram.com/p/CQzA8LRNbVh/embed"
-                        frameborder="0"></iframe>
+                    <div class="section-iframe">
+                        <iframe src="https://www.instagram.com/p/CQzA8LRNbVh/embed" frameborder="0"></iframe>
+                    </div>
+
                 </div>
                 <div class="section-promo2-right">
                     <h1>Volvieron las promo</h1>
@@ -241,15 +260,17 @@
                         nuestros productos con el 20% de descuento</p>
                 </div>
                 <div class="section-promo3-right">
-                    <iframe width="400px" height="450px" src="https://www.instagram.com/p/CKg4xHdrjHi/embed"
-                        frameborder="0"></iframe>
+                    <div class="section-iframe">
+                        <iframe src="https://www.instagram.com/p/CKg4xHdrjHi/embed" frameborder="0"></iframe>
+                    </div>
+
                 </div>
 
             </section>
         </div>
 
         <!-- Footer -->
-        <div class="footer-info">
+        <div class="footer-info" id="footer">
             <div class="footer-container">
                 <h1>Contactanos</h1>
                 <ul class="footer-contact">
@@ -268,17 +289,22 @@
                 </div>
             </div>
         </div>
-        <footer id="footer">
+        <footer class="footer">
             <h4>Copyright <i class="far fa-copyright"></i> 2021 melenasaccesorios.com</h4>
         </footer>
     </main>
 
     <!--Products Scripts-->
+    <!--Scroll reveal-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
     <!-- <script src="./js/modal-products.js"></script> -->
     <script src="./js/products.js"></script>
+    <!-- <script src="./js/scroll-reveal.js"></script> -->
 
     <!-- Smoth scrolling -->
     <script src="./js/smoth-scrolling.js"></script>
+
 </body>
 
 </html>
