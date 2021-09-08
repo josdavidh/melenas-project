@@ -58,6 +58,10 @@
     right: 40px;
 }
 
+#btn-wsp-responsive {
+    display: none;
+}
+
 .btn-wsp:hover {
     background-color: #05ce69;
     transition: .4s ease-in-out;
@@ -167,43 +171,43 @@ a {
 
 @keyframes carousel {
     0%{
-        background-image: url(../img/carousel/banner-1.jpg);
+        background-image: url(../img/carousel/DSC06854.jpg);
         transition: .1s ease-in-out;
     }
     20%{
-        background-image: url(../img/carousel/banner-1.jpg);
+        background-image: url(../img/carousel/DSC06854.jpg);
         transition: .1s ease-in-out;
     }
     21%{
-        background-image: url(../img/carousel/banner-2.jpg);
+        background-image: url(../img/carousel/DSC06341.jpg);
         transition: .1s ease-in-out;
     }
     40%{
-        background-image: url(../img/carousel/banner-2.jpg);
+        background-image: url(../img/carousel/DSC06341.jpg);
         transition: .1s ease-in-out;
     }
     41%{
-        background-image: url(../img/carousel/banner-3.jpg);
+        background-image: url(../img/carousel/DSC06777.jpg);
         transition: .1s ease-in-out;
     }
     60%{
-        background-image: url(../img/carousel/banner-3.jpg);
+        background-image: url(../img/carousel/DSC06777.jpg);
         transition: .1s ease-in-out;
     }
     61%{
-        background-image: url(../img/carousel/banner-4.jpg);
+        background-image: url(../img/carousel/DSC06818.jpg);
         transition: .1s ease-in-out;
     }
     80%{
-        background-image: url(../img/carousel/banner-4.jpg);
+        background-image: url(../img/carousel/DSC06818.jpg);
         transition: .1s ease-in-out;
     }
     81%{
-        background-image: url(../img/carousel/banner-5.jpg);
+        background-image: url(../img/carousel/DSC06765.jpg);
         transition: .1s ease-in-out;
     }
     100%{
-        background-image: url(../img/carousel/banner-5.jpg);
+        background-image: url(../img/carousel/DSC06765.jpg);
         transition: .1s ease-in-out;
     }
 }
@@ -215,8 +219,8 @@ a {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    height: calc(66vh + 70px);
-    padding: 6% 2%;
+    height: fit-content;
+    padding: 6% 5%;
 
 }
 
@@ -246,7 +250,9 @@ a {
 }
 
 .about-section > a {
-    margin: 50px 0 0 30px;
+    text-align: end;
+    margin-left: 3%;
+    /* margin: 50px 0 0 30px; */
 }
 
 .about-section a:hover {
@@ -254,6 +260,17 @@ a {
     transition: .4s ease-in-out;
 }
 
+.about-testimonials {
+    display: flex;
+    align-content: center;
+    padding: 2%;
+    color:#ffff;
+}
+.about-testimonial {
+    font-style: italic;
+    padding: 0 4%;
+    font-size: 100%;
+}
 
 /* Products */
 
@@ -514,6 +531,7 @@ a {
     transition: transform .8s ease-in-out;
     transform: translateY(0%);
     border-radius: 5px;    
+    overflow-y: scroll;
 }
 
 .modal-show-hiden{
@@ -549,43 +567,52 @@ a {
     flex-direction: column;
     align-items: center;
     width: 85%;
+    height: fit-content;
+    
+    
 }
 
 .modal-left .top-modal-left {
     width: 85%;
-    height: 64%;
     margin: 0 0 20px 0;
+    background-size: cover;
+    background-position: center;
 }
 
-.modal-left .top-modal-left img,
-.modal-left .top-modal-left .modal-main-image {
+.modal-main-image > img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
     box-shadow: 0 2px 5px 0 #1e202252;
 }
 
 .modal-left .bottom-modal-left{
-    height: 36%;
     width: 85%;
+    height: 100%;
     margin: 0 20px 0 20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     align-items: center;
     justify-content: center;
-
+    padding-bottom: 5%;
 }
 
 .bottom-modal-left > figure {
-    height: 80%;
+    height: 117px;
     width: 100%;
-    box-shadow: 0 2px 5px 0 #1e202252;
 }
 .bottom-modal-left > figure > img {
+    cursor: pointer;
+    position: relative;
+    z-index: -1;
     width: 100%;
     height: 100%;
+    object-fit: cover;
     border-radius: 2px;
+    box-shadow: 0 2px 5px 0 #1e202252;
 }
+
 
 .bottom-modal-left > a {
     color: #8b847756;
@@ -596,7 +623,6 @@ a {
 
 .modal-right {
     height: 100%;
-    max-height: 580px;
     display: flex;
     justify-content: space-around;
     width: 50%;

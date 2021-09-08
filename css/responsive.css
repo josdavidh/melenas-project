@@ -4,6 +4,14 @@
         position:fixed;
         display: block;
     }
+
+    #btn-wsp {
+        display: none;
+    }
+
+    #btn-wsp-responsive {
+        display: block;
+    } 
     .nav-items {
         display: none;
     }
@@ -245,6 +253,13 @@
     .products-info  {
         flex-direction: column;
         
+    }
+
+    .about-testimonials {
+        flex-direction: column;
+    }
+    .about-testimonials > p {
+        margin-top: 20px;
     }
 
     #fa-store-responsive {
